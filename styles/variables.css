@@ -1,0 +1,4 @@
+:root {
+    --grid-gutter-width: 8px;
+    --grid-gutter-halfwidth: calc(var(--grid-gutter-width) / 2);
+}

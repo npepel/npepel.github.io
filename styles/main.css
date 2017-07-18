@@ -1,0 +1,435 @@
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #15140e;
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.button {
+    color: rgba(255, 255, 255, .9);
+    padding: 18px 21px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section-title {
+    padding-top: 20px;
+    font-size: 64px;
+    font-weight: 700;
+    color: #726e4b;
+    margin: 0;
+    cursor: pointer;
+}
+
+.section-title-container {
+    position: absolute;
+}
+
+.section-title.section-title-workshop {
+    padding-top: 240px;
+}
+
+.section-title.section-title-ticket {
+    padding-top: 280px;
+}
+
+.section-title.section-title-location {
+    padding-top: 360px;
+}
+
+/*
+    --------------------
+    HERO ---------------
+    --------------------
+*/
+.hero-container {
+    position: relative;
+    height: 100%;
+    min-height: 535px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.hero-container .hero-container-image {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.hero-container .hero-content {
+    align-self: center;
+}
+
+.hero-container .hero-gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.28+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.28) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.28) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.hero-container h1 {
+    text-align: center;
+}
+
+.hero-container .hero-title {
+    font-size: 56px;
+    font-weight: 800;
+}
+
+.hero-container .hero-description {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-bottom: 48px;
+}
+
+.hero-container .hero-button {
+    background-color: rgba(114, 110, 75, .5);
+    border: 2px solid #fff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.hero-container .hero-button:hover {
+    background-color: rgba(114, 110, 75, .9);
+}
+
+/*
+    --------------------
+    INFO ---------------
+    --------------------
+*/
+
+.info-container {
+    margin-top: 47px;
+    padding: 40px 0 144px;
+    background-image: url("../images/tool_desc_1.svg"), url("../images/tool_desc_2.svg");
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+    color: #15140e;
+}
+
+.info .info-counters {
+    text-align: center;
+    margin-bottom: 71px;
+	font-size: 18px;
+}
+
+.info .info-counters-large {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.info .info-description {
+    padding: 0 116px;
+    font-size: 18px;
+	line-height: 1.11;
+	text-align: justify;
+}
+
+/*
+    --------------------
+    SCHEDULE -----------
+    --------------------
+*/
+
+
+.schedule {
+    position: relative;
+    width: 100%;
+    background-color: #dccbb9;
+    z-index: 1;
+    padding-top: 126px;
+    padding-bottom: 144px;
+    background-image: url("../images/tool_schedule.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.schedule .schedule-days {
+	font-size: 72px;
+	font-weight: 600;
+	text-align: center;
+	color: #726e4b;
+}
+
+.schedule .schedule-days-item {
+    position: absolute;
+    padding-top: 60px;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    transition: padding .3s ease-in-out;
+    cursor: pointer;
+}
+
+.schedule .schedule-days-item:hover {
+    padding-top: 50px;
+}
+
+.schedule .schedule-days-item.active {
+    padding-top: 20px;
+}
+
+.schedule .schedule-times-column {
+    padding: 20px 0;
+}
+
+.schedule .schedule-time {
+    padding: 66px 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+	color: #726e4b;
+}
+
+.schedule .schedule-block {
+    z-index: 1;
+    background-color: #f3f0e6;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 6px 0 rgba(0, 0, 0, 0.23);
+    padding: 20px 0;
+}
+
+.schedule .schedule-talk {
+    padding: 36px 80px 36px 52px;
+    display: flex;
+    align-items: center;
+}
+
+.schedule .schedule-photo {
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.schedule .schedule-talk-speaker {
+    font-size: 14px;
+	font-weight: 300;
+}
+
+.schedule .schedule-talk-theme {
+    font-size: 18px;
+}
+
+/*
+    --------------------
+    WORKSHOPS ----------
+    --------------------
+*/
+
+.workshops {
+    position: relative;
+    width: 100%;
+    padding: 80px 0 81px 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.workshops .workshops-container {
+    position: relative;
+}
+
+.workshops .workshops-card {
+    position: relative;
+    min-height: 392px;
+    background-color: #f3f0e6;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 6px 0 rgba(0, 0, 0, 0.23);
+    padding: 80px;
+}
+
+.workshops .workshops-card-1 {
+    background-image: url("../images/tool_workshop_1.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.workshops .workshops-card-2 {
+    background-image: url("../images/tool_workshop_2.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.workshops .workshops-card-3 {
+    background-image: url("../images/tool_workshop_3.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.workshops .workshops-details {
+    width: 392px;
+}
+
+.workshops .workshops-name {
+    font-size: 24px;
+    font-weight: 800;
+    min-height: 58px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.workshops .workshops-description {
+    font-size: 18px;
+    margin: 0;
+}
+
+.workshops .workshops-date {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.workshops .workshops-image {
+    position: absolute;
+    right: 0;
+    bottom: -250px;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.23), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.workshops .workshop-item {
+    position: relative;
+    padding-bottom: 48px;
+    margin-bottom: 38px;
+}
+
+/*
+    --------------------
+    TICKETS ------------
+    --------------------
+*/
+
+.tickets {
+    position: relative;
+    width: 100%;
+    padding: 80px 0 132px 0;
+    background-color: #dccbb9;
+    background-image: url("../images/tool_tickets.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.tickets .tickets-item {
+    min-height: 320px;
+    margin-bottom: 44px;
+    padding: 21px 16px 45px 16px;
+    background-image: url("../images/ticket.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .tickets .tickets-checkbox {
+    
+    cursor: pointer;
+} */
+
+.tickets .tickets-description {
+    min-height: 66px;
+    font-size: 18px;
+	text-align: center;
+    color: #15140e;
+    margin-bottom: 47px;
+}
+
+.tickets .tickets-price {
+    font-size: 36px;
+	text-align: center;
+	color: #15140e;
+}
+
+/* .tickets .tickets-checkbox-checked {
+    background-color: rgba(114, 110, 75, 0.9);
+} */
+
+.tickets .tickets-cost {
+    font-size: 24px;
+	text-align: center;
+    color: #15140e;
+    margin-bottom: 38px;
+}
+
+.tickets .tickets-cost-number {
+    font-size: 36px;
+}
+
+.tickets .tickets-buy {
+    text-align: center;
+}
+
+.tickets .tickets-button {
+    border: none;
+	background-color: rgba(114, 110, 75, 0.9);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.tickets .tickets-button:hover {
+    background-color: rgba(114, 110, 75, .5);
+}
+
+.tickets .ticket-checkbox {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(114, 110, 75, 0.7);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: background-color .2s ease-in-out;
+    cursor: pointer;
+}
+
+.tickets .ticket-checkbox:checked {
+    background-color: rgba(114, 110, 75, 0.9);
+}
+
+.tickets .ticket-checkbox:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    content: '';
+    opacity: 0;
+    transform: scale(.7);
+    transition: opacity .2s ease-in-out, scale .2s ease-in-out;
+    background-image: url(../images/checked.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tickets .ticket-checkbox:checked:before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.location .location-map {
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.location .location-map.active {
+    pointer-events: all;
+}

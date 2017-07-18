@@ -1,0 +1,16 @@
+{
+  "name": "woodwork-conference",
+  "version": "0.0.1",
+  "description": "Woodwork Conference site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nina Pepel",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0",
+    "rellax": "^1.0.0"
+  }
+}
