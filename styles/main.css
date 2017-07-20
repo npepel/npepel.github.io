@@ -193,8 +193,8 @@ body {
 .info .info-description {
     padding: 0 116px;
     font-size: 18px;
-	line-height: 1.11;
-	text-align: justify;
+    text-align: justify;
+    line-height: 1.22;
 }
 
 /*
