@@ -31,6 +31,7 @@ body {
     color: #726e4b;
     margin: 0;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .section-title-container {
@@ -48,6 +49,59 @@ body {
 .section-title.section-title-location {
     padding-top: 360px;
 }
+
+/*
+    --------------------
+    NAVIGATION ---------
+    --------------------
+*/
+
+.navigation {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.navigation .navigation-item {
+    width: 33px;
+    height: 33px;
+    display: block;
+    padding: 14px 28px 14px 14px;
+}
+
+.navigation .navigation-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #7F7F7F;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.19), 0 3px 3px 0 rgba(0, 0, 0, 0.23);
+    transition: background-color .2s ease-in-out;
+}
+
+.navigation .navigation-item:hover .navigation-dot,
+.navigation .navigation-item.active .navigation-dot {
+    background-color: #000;
+}
+
+.navigation .navigation-label {
+    position: absolute;
+    right: 100%;
+    pointer-events: none;
+    transform: translateX(24px);
+    opacity: 0;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    font-size: 18px;
+	color: #15140e;
+}
+
+.navigation .navigation-item:hover .navigation-label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 /*
     --------------------
@@ -339,11 +393,6 @@ body {
     align-items: center;
 }
 
-/* .tickets .tickets-checkbox {
-    
-    cursor: pointer;
-} */
-
 .tickets .tickets-description {
     min-height: 66px;
     font-size: 18px;
@@ -357,10 +406,6 @@ body {
 	text-align: center;
 	color: #15140e;
 }
-
-/* .tickets .tickets-checkbox-checked {
-    background-color: rgba(114, 110, 75, 0.9);
-} */
 
 .tickets .tickets-cost {
     font-size: 24px;
@@ -389,6 +434,7 @@ body {
 
 .tickets .ticket-checkbox {
     position: relative;
+    margin-bottom: 47px;
     width: 50px;
     height: 50px;
     background-color: rgba(114, 110, 75, 0.7);
@@ -432,4 +478,34 @@ body {
 
 .location .location-map.active {
     pointer-events: all;
+}
+
+/*
+    --------------------
+    FOOTER -------------
+    --------------------
+*/
+
+.footer {
+    min-height: 390px;
+    background-color: #15140e;
+    padding-top: 32px;
+}
+
+.footer .footer-contacts {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 48px;
+}
+
+.footer .footer-social {
+    margin-right: 32px;
+}
+
+.footer .footer-sponsors {
+    min-width: 102px;
+    min-height: 106px;
+    margin-right: 130px;
+    margin-bottom: 60px;
+    display: inline-block
 }

@@ -27,7 +27,30 @@
 
     <body>
         <div id="root">
-            <div class="hero-container">
+            <div class="navigation" data-target="nav">
+                <a href="#nav-info" class="navigation-item">
+                    <span class="navigation-label">Info</span>
+                    <span class="navigation-dot"></span>
+                </a>
+                <a href="#schedule" class="navigation-item">
+                    <span class="navigation-label">Schedule</span>
+                    <span class="navigation-dot"></span>
+                </a>
+                <a href="#workshops" class="navigation-item">
+                    <span class="navigation-label">Workshops</span>
+                    <span class="navigation-dot"></span>
+                </a>
+                <a href="#tickets" class="navigation-item">
+                    <span class="navigation-label">Tickets</span>
+                    <span class="navigation-dot"></span>
+                </a>
+                <a href="#location" class="navigation-item">
+                    <span class="navigation-label">Location</span>
+                    <span class="navigation-dot"></span>
+                </a>
+            </div>
+
+            <section class="hero-container">
                 <img src="images/hero-background.jpg" class="hero-container-image rellax" data-rellax-speed="-7" data-rellax-percentage="0.5" />
                 <!-- <img src="images/hero-background.jpg" alt="Woodworker"> -->
                 <div class="hero-gradient"></div>
@@ -39,9 +62,9 @@
                     </div>
                     <button class="button hero-button">Buy Ticket</button>
                 </div>    
-            </div>
+            </section>
 
-            <div class="info">
+            <section class="info" id="nav-info">
                 <div class="info-container container">
                     <div class="row info-counters">
                         <div class="column column-base-4">
@@ -67,11 +90,14 @@
                 </div>
                 <div class="row section-title-container">
                     <div class="column column-base-12">
-                        <h2 class="section-title rellax" data-rellax-speed="1">SCHEDULE</h2>
+                        <h2 class="section-title rellax" data-rellax-speed="1">
+                            <a class="section-title" href="#schedule">SCHEDULE</a>
+                        </h2>
                     </div>
                 </div>
-            </div>
-            <div class="schedule">
+            </section>
+
+            <section class="schedule" id="schedule">
                 <div class="schedule-container container">
                     <div class="row schedule-days">
                         <div class="column column-base-4"></div>
@@ -159,11 +185,14 @@
                 </div>
                 <div class="row section-title-container">
                     <div class="column column-base-12">
-                        <h2 class="section-title section-title-workshop rellax" data-rellax-speed="1">WORKSHOPS</h2>
+                        <h2 class="section-title section-title-workshop rellax" data-rellax-speed="1">
+                            <a class="section-title" href="#workshops">WORKSHOPS</a>
+                        </h2>
                     </div>
                 </div>
-            </div>
-            <div class="workshops">
+            </section>
+
+            <section class="workshops" id="workshops">
                 <div class="workshops-container container">
                     <div class="workshop-item">
                         <div class="row">
@@ -213,11 +242,14 @@
                 </div>
                 <div class="row section-title-container">
                     <div class="column column-base-12">
-                        <h2 class="section-title section-title-ticket rellax" data-rellax-speed="1">TICKETS</h2>
+                        <h2 class="section-title section-title-ticket rellax" data-rellax-speed="1">
+                            <a class="section-title" href="#tickets">TICKETS</a>
+                        </h2>
                     </div>
                 </div>
-            </div>
-            <div class="tickets">
+            </section>
+
+            <section class="tickets" id="tickets">
                 <div class="tickets-container container">
                     <form action="#" class="row" data-target="ticket-form">
                         <div class="tickets-item column column-base-3">
@@ -284,12 +316,14 @@
                 </form>
                 <div class="row section-title-container">
                     <div class="column column-base-12">
-                        <h2 class="section-title section-title-location rellax" data-rellax-speed="1">LOCATION</h2>
+                        <h2 class="section-title section-title-location rellax" data-rellax-speed="1">
+                            <a class="section-title" href="#location">LOCATION</a>
+                        </h2>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="location" data-target="location-map-container">
+            <section class="location" data-target="location-map-container" id="location">
                 <iframe 
                     class="location-map"
                     data-target="location-map" 
@@ -300,12 +334,62 @@
                     src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBxmyOfg5dYgRTYcucFrCFCo&key=AIzaSyDn9BrrJvb9p3oMQjxE7mpQ0UcylDzbgWI" 
                     allowfullscreen
                 ></iframe>
-            </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-container container">
+                    <div class="row">
+                        <div class="column column-base-1"></div>
+                        <div class="column column-base-5">
+                            <div class="footer-contacts">
+                                Business Park Dr<br />
+                                Springfield, IL 62703<br />
+                                Phone: 217-789-8600<br />
+                                Email: gflores@thoughtblab.name<br />
+                            </div>
+                            <a href="" class="footer-social">
+                                <img class="footer-google" src="images/google media social.svg">
+                            </a>
+                            <a href="" class="footer-social">
+                                <img class="footer-facebook" src="images/facebook media social.svg">
+                            </a>
+                            <a href="" class="footer-social">
+                                <img class="footer-twitter" src="images/media social twitter.svg">
+                            </a>
+                            <a href="" class="footer-social">
+                                <img class="footer-youtube" src="images/youtube media social.svg">
+                            </a>
+                        </div>
+                        <div class="column column-base-6">
+                            <a href="" class="footer-sponsors">
+                                <img class="footer-click" src="images/Click_Bank_Logo.svg">
+                            </a>
+                            <a href="" class="footer-sponsors">
+                                <img class="footer-jcb" src="images/JCB_Logo.svg">
+                            </a>
+                            </a>
+                            <a href="" class="footer-sponsors">
+                                <img class="footer-switch" src="images/Switch_Logo.svg">
+                            </a>
+                            <a href="" class="footer-sponsors">
+                                <img class="footer-bbb" src="images/BBB_Logo.svg">
+                            </a>
+                            <a href="" class="footer-sponsors">
+                                <img class="footer-postepay" src="images/Postepay_Logo.svg">
+
+                            <a href="" class="footer-sponsors">
+                                <img class="footer-wirecard" src="images/Wirecard_Logo.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
         
 
         <script src="./libs/jquery/dist/jquery.js"></script>
         <script src="./libs/rellax/rellax.js"></script>
+        <script src="./js/scrollspy.js"></script>
         <script src="./js/main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     </body>

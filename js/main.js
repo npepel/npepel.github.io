@@ -38,3 +38,6 @@ $ticketForm.on('change', 'input[type="checkbox"]', () => {
 
     $total.text(total + '$');
 });
+
+
+// $('.section-title').click()
