@@ -4,11 +4,16 @@
 const rellax = new Rellax('.rellax');
 
 const scheduleSelectorItems = $('[data-target="schedule-day-selector"]');
+const scheduleTabContainer = $('[data-target="schedule-tab-container"]');
 scheduleSelectorItems.click((event) => {
     scheduleSelectorItems.each((index, element) => {
-        $(element).removeClass('active');   
+        $(element).removeClass('active');
     });
     $(event.target).addClass('active');
+
+    const position = $(event.target).data('tab-position');
+    // console.log(position)
+    scheduleTabContainer.css('transform', `translateX(${position})`);
 });
 
 // -----------------
@@ -39,5 +44,8 @@ $ticketForm.on('change', 'input[type="checkbox"]', () => {
     $total.text(total + '$');
 });
 
-
-// $('.section-title').click()
+$('[data-target="section-title-link"]').on('click', (event) => {
+    event.preventDefault();
+    const href = $(event.target).attr('href');
+    $('[data-target="nav"]').find(`[href="${href}"]`).click();
+});

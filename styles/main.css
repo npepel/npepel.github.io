@@ -258,7 +258,23 @@ body {
     background-color: #f3f0e6;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 6px 0 rgba(0, 0, 0, 0.23);
     padding: 20px 0;
+    overflow: hidden;
 }
+
+.schedule .schedule-block-container {
+    position: absolute;
+    display: flex;
+    transform: translateX(0);
+    transition: transform .2s ease-in-out;
+}
+
+.schedule .schedule-day {
+    width: 632px;
+}
+
+.schedule .schedule-day-two, .schedule-day-three {
+    /* display: none; */
+} 
 
 .schedule .schedule-talk {
     padding: 36px 80px 36px 52px;
