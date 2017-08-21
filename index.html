@@ -60,7 +60,7 @@
                         October 5-7 <br />
                         Springfield, IL
                     </div>
-                    <button class="button hero-button">Buy Ticket</button>
+                    <button class="button hero-button" data-action="navigate-tickets">Buy Ticket</button>
                 </div>    
             </section>
 
@@ -90,7 +90,7 @@
                 </div>
                 <div class="row section-title-container">
                     <div class="column column-base-12">
-                        <h2 class="section-title rellax" data-rellax-speed="1" data-target="section-title-link">
+                        <h2 class="section-title section-title-schedule rellax" data-rellax-speed="1" data-target="section-title-link">
                             <a class="section-title" href="#schedule">SCHEDULE</a>
                         </h2>
                     </div>
@@ -297,7 +297,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="workshops-image rellax" data-rellax-speed="1" data-target="schedule-day-selector" src="images/workshop_photo_1.png">
+                        <img class="workshops-image rellax" data-rellax-speed="1" data-target="schedule-day-selector" src="images/workshop_photo_1.jpg">
                     </div>
                     <div class="workshop-item">
                         <div class="row">
@@ -312,7 +312,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="workshops-image rellax" data-rellax-speed="1" data-target="schedule-day-selector" src="images/workshop_photo_2.png">
+                        <img class="workshops-image rellax" data-rellax-speed="1" data-target="schedule-day-selector" src="images/workshop_photo_2.jpg">
                     </div>
                     <div class="workshop-item">
                         <div class="row">
@@ -327,7 +327,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="workshops-image rellax" data-rellax-speed="1" data-target="schedule-day-selector" src="images/workshop_photo_3.png">
+                        <img class="workshops-image rellax" data-rellax-speed="1" data-target="schedule-day-selector" src="images/workshop_photo_3.jpg">
                     </div>
                 </div>
                 <div class="row section-title-container">
@@ -419,7 +419,7 @@
                     data-target="location-map" 
                     height="525" 
                     frameborder="0"
-                    style="border:0"
+                    style="border:none"
                     scrolling="no"
                     src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBxmyOfg5dYgRTYcucFrCFCo&key=AIzaSyDn9BrrJvb9p3oMQjxE7mpQ0UcylDzbgWI" 
                     allowfullscreen
@@ -428,48 +428,59 @@
 
             <footer class="footer">
                 <div class="footer-container container">
+                    <div class="row footer-sponsors-block">
+                        <div class="column column-base-2">
+                            <a href="#" class="footer-sponsors">
+                                <img class="footer-switch" src="images/Switch_Logo.svg">
+                            </a>
+                        </div>
+                        <div class="column column-base-2">
+                            <a href="#" class="footer-sponsors">
+                                <img class="footer-postepay" src="images/Postepay_Logo.svg">
+                            </a>
+                        </div>
+                        <div class="column column-base-2">
+                            <a href="#" class="footer-sponsors">
+                                <img class="footer-jcb" src="images/JCB_Logo.svg">
+                            </a>
+                        </div>
+                        <div class="column column-base-2">
+                            <a href="#" class="footer-sponsors">
+                                <img class="footer-bbb" src="images/BBB_Logo.svg">
+                            </a>
+                        </div>
+                        <div class="column column-base-2">
+                            <a href="#" class="footer-sponsors">
+                                <img class="footer-wirecard" src="images/Wirecard_Logo.svg">
+                            </a>
+                        </div>
+                        <div class="column column-base-2">
+                            <a href="#" class="footer-sponsors">
+                                <img class="footer-click" src="images/Click_Bank_Logo.svg">
+                            </a>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="column column-base-1"></div>
+                        <div class="column column-base-2"></div>
                         <div class="column column-base-5">
+                             <h3 class="footer-headers"> 
+                                Contact us
+                             </h3>
                             <div class="footer-contacts">
                                 Business Park Dr<br />
                                 Springfield, IL 62703<br />
                                 Phone: 217-789-8600<br />
                                 Email: gflores@thoughtblab.name<br />
                             </div>
-                            <a href="" class="footer-social">
-                                <img class="footer-google" src="images/google media social.svg">
-                            </a>
-                            <a href="" class="footer-social">
-                                <img class="footer-facebook" src="images/facebook media social.svg">
-                            </a>
-                            <a href="" class="footer-social">
-                                <img class="footer-twitter" src="images/media social twitter.svg">
-                            </a>
-                            <a href="" class="footer-social">
-                                <img class="footer-youtube" src="images/youtube media social.svg">
-                            </a>
                         </div>
-                        <div class="column column-base-6">
-                            <a href="" class="footer-sponsors">
-                                <img class="footer-click" src="images/Click_Bank_Logo.svg">
-                            </a>
-                            <a href="" class="footer-sponsors">
-                                <img class="footer-jcb" src="images/JCB_Logo.svg">
-                            </a>
-                            </a>
-                            <a href="" class="footer-sponsors">
-                                <img class="footer-switch" src="images/Switch_Logo.svg">
-                            </a>
-                            <a href="" class="footer-sponsors">
-                                <img class="footer-bbb" src="images/BBB_Logo.svg">
-                            </a>
-                            <a href="" class="footer-sponsors">
-                                <img class="footer-postepay" src="images/Postepay_Logo.svg">
-
-                            <a href="" class="footer-sponsors">
-                                <img class="footer-wirecard" src="images/Wirecard_Logo.svg">
-                            </a>
+                        <div class="column column-base-5">
+                            <h3 class="footer-headers">
+                                Follow us
+                            </h3>
+                            <a href="#" class="footer-social"><img class="footer-google" src="images/google-media-social.svg"></a>
+                            <a href="#" class="footer-social"><img class="footer-facebook" src="images/facebook-media-social.svg"></a>
+                            <a href="#" class="footer-social"><img class="footer-twitter" src="images/media-social-twitter.svg"></a>
+                            <a href="#" class="footer-social"><img class="footer-youtube" src="images/youtube-media-social.svg"></a>
                         </div>
                     </div>
                 </div>

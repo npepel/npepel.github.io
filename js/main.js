@@ -49,3 +49,8 @@ $('[data-target="section-title-link"]').on('click', (event) => {
     const href = $(event.target).attr('href');
     $('[data-target="nav"]').find(`[href="${href}"]`).click();
 });
+
+$('[data-action="navigate-tickets"]').click((event) => {
+    event.preventDefault();
+    $('[data-target="nav"]').find('[href="#tickets"]').click();
+});

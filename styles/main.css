@@ -38,16 +38,20 @@ body {
     position: absolute;
 }
 
-.section-title.section-title-workshop {
-    padding-top: 240px;
+.section-title.section-title-schedule {
+     padding-top: 60px; 
 }
 
-.section-title.section-title-ticket {
+.section-title.section-title-workshop {
     padding-top: 280px;
 }
 
+.section-title.section-title-ticket {
+    padding-top: 340px;
+}
+
 .section-title.section-title-location {
-    padding-top: 360px;
+    padding-top: 420px;
 }
 
 /*
@@ -62,13 +66,33 @@ body {
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
+    padding: 16px 0 0 0;
+}
+
+.navigation::before {
+    top: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    margin-left: -153px;
+    width: 305px;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(255,255,255,.7);
+    transition: opacity .2s ease-in-out;
+    z-index: -1;
+}
+
+.navigation:hover::before {
+    opacity: 1;
 }
 
 .navigation .navigation-item {
     width: 33px;
     height: 33px;
     display: block;
-    padding: 14px 28px 14px 14px;
+    padding: 14px 18px 14px 14px;
 }
 
 .navigation .navigation-dot {
@@ -76,14 +100,19 @@ body {
     height: 10px;
     border-radius: 50%;
     display: inline-block;
-    background-color: #7F7F7F;
+    background-color: #A9A791;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.19), 0 3px 3px 0 rgba(0, 0, 0, 0.23);
     transition: background-color .2s ease-in-out;
 }
 
 .navigation .navigation-item:hover .navigation-dot,
 .navigation .navigation-item.active .navigation-dot {
-    background-color: #000;
+    background-color: #726e4b;
+}
+
+.navigation .navigation-item:hover .navigation-label,
+.navigation .navigation-item.active .navigation-label {
+    color: #726e4b;
 }
 
 .navigation .navigation-label {
@@ -94,10 +123,10 @@ body {
     opacity: 0;
     transition: transform .2s ease-in-out, opacity .2s ease-in-out;
     font-size: 18px;
-	color: #15140e;
+	color: #A9A791;
 }
 
-.navigation .navigation-item:hover .navigation-label {
+.navigation:hover .navigation-item .navigation-label {
     opacity: 1;
     transform: translateX(0);
 }
@@ -368,9 +397,17 @@ body {
 .workshops .workshops-image {
     position: absolute;
     right: 0;
-    bottom: -250px;
+    bottom: -220px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.23), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1;
+}
+
+.workshops .workshop-item:nth-child(2) .workshops-image {
+    bottom: -260px;
+}
+
+.workshops .workshop-item:nth-child(3) .workshops-image {
+    bottom: -300px;
 }
 
 .workshops .workshop-item {
@@ -504,24 +541,35 @@ body {
 
 .footer {
     min-height: 390px;
-    background-color: #15140e;
+    background-color: #dccbb9;
     padding-top: 32px;
 }
 
 .footer .footer-contacts {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 48px;
+    font-size: 16px;
+    color: #151312;
+    margin-bottom: 90px;
+    line-height: 1.38;
 }
 
 .footer .footer-social {
-    margin-right: 32px;
+    margin-right: 28px;
+}
+
+.footer .footer-sponsors-block {
+    margin: 70px 0;
 }
 
 .footer .footer-sponsors {
-    min-width: 102px;
-    min-height: 106px;
-    margin-right: 130px;
-    margin-bottom: 60px;
-    display: inline-block
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-headers {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 22px 0;
 }
